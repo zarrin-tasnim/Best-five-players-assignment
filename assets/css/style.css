@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header css */
+.header-area h1 {
+    font-size: 4.4rem;
+    color: #FF5E19;
+}
+
+.header-area p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/* card css */
+
+/* Selected List Area */
+.selected-list-area {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    height: 300px;
+
+}
+.Budget-area {
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+
+input[type=number] {
+    width: 100%;
+    border: 1px solid #ffffff;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+input[type=number]:focus {
+    width: 100%;
+    border: 1px solid #ffffff;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+.calculate {
+    display: block;
+    width: 271px;
+    height: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.total {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.total-amout {
+    text-align: left;
+    color: #FF5E19;
+}
+
+.total-amout span {}

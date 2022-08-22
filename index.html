@@ -16,7 +16,184 @@
 </head>
 
 <body>
+    <!-- Header Starts Here -->
+    <header class="header-area">
+        <div class="container-fluid p-5 bg-dark text-white text-center">
+            <h1 class="mt-5  fw-bold p-3">Best In The World</h1>
+            <div class="w-50 mx-auto mt-2 mb-3 p-2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi minima consectetur aut quo corporis
+                    laborum quam
+                    eveniet exercitationem eum nesciunt!</p>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+    <!-- Player-area starts here -->
+    <div class="container p-2 mt-5">
+        <div class="row">
+            <!-- Players Card Starts here  -->
+            <div class="col-md-8 col-lg-8 bg-dark text-white">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class="img-fluid card-img-top" src="assets/images/Kylian Mbappe.jpeg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Kylian Mbappe</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class=" card-img-top" src="assets/images/Lionel-Messi.jpg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Lionel-Messi</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class=" card-img-top" src="assets/images/Cristiano Ronaldo.jpg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Cristiano Ronaldo</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class=" card-img-top" src="assets/images/neymar-jr.jpeg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Neymar</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class="img card-img-top" src="assets/images//Mohamed Salah.jpeg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Mohamed Salah</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white p-2" style="width: 16rem;">
+                            <img class="img-fluid card-img-top" src="assets/images/Erling.jpeg" alt="Card image"
+                                style="height: 350px;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Erling Haaland</h4>
+                                <a href="#" class="btn btn-primary">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Players Card ends here  -->
+            <!-- Selected area starts here  -->
+            <div class="col-md-4 col-lg-4 bg-dark text-white">
+                <div class="row">
+                    <div class="col-12 p-3 mb-4">
+                        <div class="selected-list-area">
+                            <h2 class="text-center p-4 mt-1 mb-4">Selected - V</h2>
+                            <div class="selected-list">
+                                <ol class="list">
 
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="Budget-area">
+                            <h2 class="text-center p-4 mt-1 mb-4">Budget</h2>
+                            <div class="Budget">
+                                <div class="row">
+                                    <div class="col-lg-12 d-flex">
+                                        <div class="row mx-auto">
+                                            <div class="col-lg-5 text-center fs-4">
+                                                <label for="text" class="">Per Player</label>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <input type="number" class="form-control" id="per-player-number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 text-center p-2 mt-3 mb-4">
+                                        <button type="submit" id="calculate"
+                                            class="btn btn-primary mx-auto calculate fs-4 pb-3">Calculate</button>
+                                    </div>
+                                    <div class="col-lg-12 mt-3 mb-3 ">
+                                        <div class="row mx-auto">
+                                            <div class="col-lg-5 text-center fs-5">
+                                                <label for="text" class="">Player Expenses</label>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <input type="number" class="form-control" id="per-player-number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mt-3 mb-3 ">
+                                        <div class="row mx-auto">
+                                            <div class="col-lg-5 text-center fs-5">
+                                                <label for="text" class="">Manager</label>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <input type="number" class="form-control" id="per-player-number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mt-3 mb-3 ">
+                                        <div class="row mx-auto">
+                                            <div class="col-lg-5 text-center fs-5">
+                                                <label for="text" class="">Coach</label>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <input type="number" class="form-control" id="per-player-number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 text-center p-2 mt-3 mb-4">
+                                        <button type="submit" id="calculate"
+                                            class="btn btn-primary mx-auto calculate fs-4 pb-3">Calculate Total</button>
+                                    </div>
+                                    <div class="col-lg-12 mt-3 mb-3">
+                                        <div class="row mx-auto">
+                                            <div class="col-lg-8 col-md-8 text-start fs-6">
+                                                <h5 class="total">Total</h5>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 d-flex">
+                                                <h5 id="total-amout" class="total-amout">$ <span>110000</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Selected area ends here  -->
+        </div>
+    </div>
+    <!-- Player-area ends here -->
+
+    <!-- Footer Area starts here -->
+    <footer>
+        <div class="bg-dark text-center text-white p-5">
+            <p>Copyright @ 2022 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Area ends here -->
+
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
