@@ -8,6 +8,7 @@ function buttonSelect(element) {
     const ol = document.getElementById('list')
     ol.innerText = '';
 
+    var length = playerListArray.length;
 
     for (let i = 0; i < playerListArray.length; i++) {
 
@@ -16,6 +17,11 @@ function buttonSelect(element) {
         li.innerText = `${name}`
         ol.appendChild(li);
         element.disabled = true;
+
+        if (document.getElementById('list').childElementCount > 4) {
+            alert('Can not add more');
+            return false;
+        }
     }
 
 }
@@ -23,12 +29,20 @@ function buttonSelect(element) {
 
 document.getElementById('calculate').addEventListener('click', function () {
     const perPlayerCostField = document.getElementById('per-player-number');
-    const perPlayerCost = perPlayerCostField.value;
+    const perPlayerCostString = perPlayerCostField.value;
+    const perPlayerCost = parseFloat(perPlayerCostString);
     // console.log(perPlayerCost);
 
-    const TotalElement = document.getElementById('per-player-number-total');
-    const playerTotalExpence = TotalElement.innerText;
+    const playerExpenseTotal = document.getElementById('per-player-number-total');
+    const playerTotalExpenceString = playerExpenseTotal.innerText;
+    const playerTotalExpence = parseFloat(playerTotalExpenceString);
+
     // console.log(playerTotalExpence);
+    let numberOfPlayer = document.getElementById("list").children.length;
+
+    //set player expense
+    const newPlayerExpenseTotal = perPlayerCost * numberOfPlayer;
+    setTextElementValueById('per-player-number-total', newPlayerExpenseTotal);
 
 })
 
