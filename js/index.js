@@ -18,7 +18,7 @@ function buttonSelect(element) {
         ol.appendChild(li);
         element.disabled = true;
 
-        if (document.getElementById('list').childElementCount > 4) {
+        if (document.getElementById('list').childElementCount == 5) {
             alert('Can not add more');
             return false;
         }

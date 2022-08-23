@@ -5,6 +5,10 @@
 }
 
 /* Header css */
+.header-area {
+    background-color: #000000;
+}
+
 .header-area h1 {
     font-size: 4.4rem;
     color: #FF5E19;
