@@ -28,9 +28,11 @@ function buttonSelect(element) {
 
 
 document.getElementById('calculate').addEventListener('click', function () {
+
     const perPlayerCostField = document.getElementById('per-player-number');
     const perPlayerCostString = perPlayerCostField.value;
     const perPlayerCost = parseFloat(perPlayerCostString);
+    perPlayerCostField.value = '';
     // console.log(perPlayerCost);
 
     const playerExpenseTotal = document.getElementById('per-player-number-total');
@@ -59,13 +61,14 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const managerCostField = document.getElementById('manger-expense');
     const perManagerCostString = managerCostField.value;
     const perManagerCost = parseFloat(perManagerCostString);
+    managerCostField.value = '';
     // console.log(perManagerCost);
 
     // Coach
     const coachCostField = document.getElementById('coach-expense');
     const perCoachCostString = coachCostField.value;
     const perCoachCost = parseFloat(perCoachCostString);
-
+    coachCostField.value = '';
 
 
     //get total
