@@ -87,7 +87,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
 
 
 })
-
+// common function
 function setTextElementValueById(elementId, newValue) {
     const textElement = document.getElementById(elementId);
 
