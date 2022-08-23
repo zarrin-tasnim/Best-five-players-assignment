@@ -7,16 +7,16 @@ function buttonSelect(element) {
 
     const ol = document.getElementById('list')
     ol.innerText = '';
-    for (let i = 0; i < playerListArray.length; i++) {
-        if (playerListArray.length < 6) {
-            let name = playerListArray[i];
-            const li = document.createElement('li');
-            li.innerText = `${name}`
-            ol.appendChild(li);
-            element.disabled = true;
-        }
-    }
 
+
+    for (let i = 0; i < playerListArray.length; i++) {
+
+        let name = playerListArray[i];
+        const li = document.createElement('li');
+        li.innerText = `${name}`
+        ol.appendChild(li);
+        element.disabled = true;
+    }
 
 }
 
@@ -63,12 +63,17 @@ document.getElementById('calculate-total').addEventListener('click', function ()
 
     const newExpenseTotal = perPlayerExpense + perManagerCost + perCoachCost;
 
-    playerExpenseTotalText.innerText = newExpenseTotal;
+    // playerExpenseTotalText.innerText = newExpenseTotal;
 
-
+    setTextElementValueById('total-amout', newExpenseTotal);
 
 
 
 })
 
+function setTextElementValueById(elementId, newValue) {
+    const textElement = document.getElementById(elementId);
 
+    textElement.innerText = newValue;
+
+}
