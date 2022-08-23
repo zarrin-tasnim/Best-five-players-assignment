@@ -8,13 +8,15 @@ function buttonSelect(element) {
     const ol = document.getElementById('list')
     ol.innerText = '';
     for (let i = 0; i < playerListArray.length; i++) {
-        let name = playerListArray[i];
-        const li = document.createElement('li');
-        li.innerText = `${name}`
-        ol.appendChild(li);
-
+        if (playerListArray.length < 6) {
+            let name = playerListArray[i];
+            const li = document.createElement('li');
+            li.innerText = `${name}`
+            ol.appendChild(li);
+            element.disabled = true;
+        }
     }
-    element.disabled = true;
+
 
 }
 
@@ -30,7 +32,40 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 })
 
-document.getElementById('calculate').addEventListener('click', function () {
+document.getElementById('calculate-total').addEventListener('click', function () {
+    // Player Expense
+    const playerExpenseText = document.getElementById('per-player-number-total');
+    const perPlayerExpenseString = playerExpenseText.innerText;
+    const perPlayerExpense = parseFloat(perPlayerExpenseString);
+
+    // console.log(perPlayerExpense);
+
+
+    // Manager
+    const managerCostField = document.getElementById('manger-expense');
+    const perManagerCostString = managerCostField.value;
+    const perManagerCost = parseFloat(perManagerCostString);
+    // console.log(perManagerCost);
+
+    // Coach
+    const coachCostField = document.getElementById('coach-expense');
+    const perCoachCostString = coachCostField.value;
+    const perCoachCost = parseFloat(perCoachCostString);
+
+
+
+    //get total
+    const playerExpenseTotalText = document.getElementById('total-amout');
+    const PlayerExpenseTotalString = playerExpenseTotalText.innerText;
+    const totalExpense = parseFloat(PlayerExpenseTotalString);
+    // console.log(totalExpense);
+    // Calculate total
+
+    const newExpenseTotal = perPlayerExpense + perManagerCost + perCoachCost;
+
+    playerExpenseTotalText.innerText = newExpenseTotal;
+
+
 
 
 
